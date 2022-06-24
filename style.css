@@ -1,0 +1,69 @@
+table th{
+    padding: 15px;
+}
+
+
+.popup {
+    position: fixed;
+    bottom: -100%;
+    width: 100%;
+    height: 80px;
+    background-color: rgb(255, 183, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s all;
+}
+
+.popup_active {
+    bottom: 0;
+}
+
+.btn_cookie {
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    color: #fff;
+    margin-left: 30px;
+    border: 1px solid black;
+    background-color: transparent;
+}
+
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+}
+.show{
+    display: none;
+}
+.modal__dialog {
+    max-width: 500px;
+    margin: 40px auto;
+   
+}
+.modal__close{
+    display: flex;
+    justify-content: flex-end;
+}
+.modal__content{
+    max-width: 320px;
+    margin: 100px auto;
+    border-radius: 10px;
+}
+.close{
+    background-color: #fff;
+    border: none;
+}
+.cookies-guard{
+    padding: 20px 24px;
+    background-color: tomato;
+    border: 1px solid black;
+}
